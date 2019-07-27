@@ -7,9 +7,9 @@
 #include "bsp_buttons.h"
 #include "app_remap_led.h"
 
-#define NUM_CONNECTIONS  2
-#define ROUND_TIMEOUT      5
-#define ROUNDS_LIMIT        11
+#define NUM_CONNECTIONS		2
+#define ROUND_TIMEOUT		5
+#define ROUNDS_LIMIT		11
 
 static void linkTo(void);
 void toggleLED(uint8_t);
@@ -30,7 +30,6 @@ int randNum=124;
 
 void main(void) {
     BSP_Init();
-
     SMPL_Init(sRxCallback);
 
     /***************************** [ Timer & UART ] *****************************/
